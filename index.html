@@ -4,7 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grace Yu - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #007acc;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 80vh;
+            padding: 2rem;
+        }
+        main h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        main p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+        a.cv-link {
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            background-color: #007acc;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        a.cv-link:hover {
+            background-color: #005f99;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ffffff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,11 +90,9 @@
     </header>
 
     <main>
-        <section>
-            <h1>Welcome to Grace Yu's Website</h1>
-            <p>Hello! I’m Grace Yu, a student at the University of Oxford pursuing my Master of Mathematics in Mathematics and Statistics.</p>
-            <p><a href="assets/Grace_YU___CV__fm___250103___1pg_gb_mm_.pdf" target="_blank">View my CV</a></p>
-        </section>
+        <h1>Welcome to Grace Yu's Website</h1>
+        <p>Hello! I’m Grace Yu, a student at the University of Oxford pursuing my Master of Mathematics in Mathematics and Statistics. Welcome to my personal website where I share my academic journey, technical projects, and reflections.</p>
+        <a class="cv-link" href="assets/cv.pdf" target="_blank">View My CV</a>
     </main>
 
     <footer>
